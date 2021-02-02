@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    background: url('021sLWW-hd-texture-wallpapers.jpg') no-repeat fixed;
+    font-family: "Open Sans", sans-serif;
+}
+.upper-box{
+   width: 80%;
+   background-color: rgb(100, 149, 237, 0.2);
+   margin: 20px auto;
+   padding: 20px;
+   height: 600px;
+   border-radius: 10px;
+   box-shadow:10px 10px 5px , -5px -5px 10px 2px;
+   justify-content: center;
+   overflow-x: auto;
+}
+.heading{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 4px;
+}
+h1{
+    font-weight: bolder;
+}
+#userItem{
+  margin-left: 15%;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+#userItem:focus{
+    border: 2px solid dodgerblue;
+}
+#clickButton{
+    min-width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+#clickButton:hover{
+    background: darkblue;
+    color: white;
+}
+.list-items{
+   
+   margin:20px auto;
+   padding: 0;
+   height:auto;
+}
+li{
+   list-style-type: none;
+   margin-left: 10%;
+    width: 80%;
+    padding:10px 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid #025f70;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #4eb9cd;
+    transition: all 0.75s ease;
+}
+li:hover {
+    background: #76cfe0;
+    cursor: pointer;
+}
+li > button{
+    float: right;
+    min-width: 100px;
+    padding: 5px 0;
+    margin-top: -5px;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+
+}
+.done {
+    background: #51df70 !important;
+    color: #023a0e;
+    text-decoration: line-through 2px black;
+}
+
+.deleteAll {
+    display: none;
+}
+ul li input[type=text] {
+    display: none;
+}
+
+ul li.editMode input[type=text] {
+    display: inline-block;
+}
+
+ul li.editMode label {
+    display: none;
+}
