@@ -20,7 +20,7 @@ function createNewTask(inputItem){
     let editButton = document.createElement("button");
     // button.delete
     let deleteButton = document.createElement("button");
-    console.log(deleteButton);
+   
     label.innerText = inputItem;
     editInput.type = "text";
     editButton.innerText = "Edit";
@@ -47,20 +47,25 @@ function bindTaskEvents(taskListItem) {
 }
 
 function editTask() {
-    let currentItem = this.parentNode;
-    let editInput = currentItem.querySelector("input[type=text]");
-    let label = currentItem.querySelector("label");
-    let containsClass = currentItem.classList.contains("editMode");
+    // let currentItem = this.parentNode;
 
-    // if the listItem element contains the editMode class
-    if (containsClass) {
-        //label text become the input's value
-        label.innerText = editInput.value;
-    } else {
-        //input value becomes the labels text
-        editInput.value = label.innerText;
-    }
-    currentItem.classList.toggle("editMode"); //to add/remove the Edit Mode
+    // let editInput = currentItem.querySelector("input[type=text]");
+    // let label = currentItem.querySelector("label");
+    // let containsClass = currentItem.classList.contains("editMode");
+
+    // // if the listItem element contains the editMode class
+    // if (containsClass) {
+    //     //label text become the input's value
+    //     label.innerText = editInput.value;
+    // } else {
+    //     //input value becomes the labels text
+    //     editInput.value = label.innerText;
+    // }
+    // currentItem.classList.toggle("editMode"); //to add/remove the Edit Mode
+    let textEdit = this.parentElement.childNodes[0].innerText;
+    inputs.value = textEdit;
+    this.parentElement.remove();
+   
 }
 
 function deleteTask() {
