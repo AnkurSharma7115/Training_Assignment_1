@@ -100,3 +100,33 @@ ul li.editMode input[type=text] {
 ul li.editMode label {
     display: none;
 }
+footer{
+    background-color: rgb(100, 149, 237, 0.2);
+    padding: 1rem;
+    text-align: center;
+    margin: 20px auto;
+   padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 80%;
+    border-radius: 10px;
+    box-shadow:10px 10px 5px , -5px -5px 10px 2px;
+    justify-content: center;
+  }
+  
+.fa {
+ 
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+     color: black;
+     background-color : white;
+  }
+  
+  .fa-github {
+    
+    color: white;
+  }

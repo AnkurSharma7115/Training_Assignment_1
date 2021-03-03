@@ -3,11 +3,16 @@ let clickBtn = document.getElementById("clickButton");
 let ul = document.querySelector("ul");
 
 let createListItemElement = function() {
-    let listItem = createNewTask(inputs.value);
-    ul.appendChild(listItem);
-    inputs.value = "";
-    bindTaskEvents(listItem);
-    
+    let textValues = inputs.value;
+    if(textValues.trim().length == 0 || textValues == ""){
+      return false;
+    }
+    else{
+      let listItem = createNewTask(inputs.value);
+      ul.appendChild(listItem);
+      inputs.value = "";
+      bindTaskEvents(listItem);
+    } 
 }
 function createNewTask(inputItem){
     // create List Item
